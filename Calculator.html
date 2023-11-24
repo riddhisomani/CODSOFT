@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="box">
+            <input type="text" name="screen" id="screen">
+            <div id="buttons">
+                <button type="button" onclick="document.getElementById('screen').value=''">C</button>
+                <button type="button" onclick="deletelastentry()">&#5176;</button>
+                <button type="button" onclick="solve('%')">%</button>
+                <button type="button" onclick="solve('/')">&#247;</button>
+                <button type="button" onclick="solve('7')">7</button>
+                <button type="button" onclick="solve('8')">8</button>
+                <button type="button" onclick="solve('9')">9</button>
+                <button type="button" onclick="solve('*')">&#215;</button>
+                <button type="button" onclick="solve('4')">4</button>
+                <button type="button" onclick="solve('5')">5</button>
+                <button type="button" onclick="solve('6')">6</button>
+                <button type="button" onclick="solve('-')">&#8722;</button>
+                <button type="button" onclick="solve('1')">1</button>
+                <button type="button" onclick="solve('2')">2</button>
+                <button type="button" onclick="solve('3')">3</button>
+                <button type="button" onclick="solve('+')">&#43;</button>
+                <button type="button" onclick="solve('00')">00</button>
+                <button type="button" onclick="solve('0')">0</button>
+                <button type="button" onclick="solve('.')">.</button>
+                <button type="button" onclick="result()">&#61;</button>
+            </div>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+
+</html>
